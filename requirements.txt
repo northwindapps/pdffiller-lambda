@@ -1,0 +1,6 @@
+rembg-aws-lambda == 0.2.0
+flask == 3.0.3
+aws_wsgi == 0.2.7
+pillow == 9.3.0
+opencv-python-headless == 4.6.0.66
+pdf2image
