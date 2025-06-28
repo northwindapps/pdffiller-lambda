@@ -32,6 +32,8 @@ def process_image():
     first_page = images[0].convert("RGB")  # force RGB to prevent PNG save issues
     img_io = io.BytesIO()
     first_page.save(img_io, format="PNG")
+    img_size = img_io.getbuffer().nbytes
+    print(f"Generated PNG size: {img_size} bytes")
     img_io.seek(0)
     encoded = base64.b64encode(img_io.getvalue()).decode("utf-8")
 
